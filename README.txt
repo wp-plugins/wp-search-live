@@ -21,17 +21,17 @@ This is very much a working prototype, so please log any issues you find on the 
 
 Add the shortcode `[wp_live_search]` to a page or something. There's a few shortcode attributes that you can use, and are as follows:  
 
-`type`  
+type=“”   
 Your choices are `posts` or `pages`. Defaults to `posts`.
 
-`placeholder`  
+placeholder=“”  
 The text displayed in the input. Defaults to `Search...`.
 
-`results`  
+results=“”  
 The text displayed for the results. Defaults to `entries found`.
 
-`target`  
-An optional target UL parent to send the search results to. Example `target="#someotherdiv"`.
+target=“” 
+An optional target UL parent to send the search results to. Example target="#someotherdiv".
 
 
 == Installation ==
