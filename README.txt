@@ -74,6 +74,7 @@ Yes just use `define('WPLS_DISABLE_STYLE', true)` and the CSS file will not load
 
 == Screenshots ==
 
+1. Default styling for the search
 
 == Changelog ==
 
