@@ -31,7 +31,7 @@ results=“”
 The text displayed for the results. Defaults to `entries found`.
 
 target=“” 
-An optional target UL parent to send the search results to. Example `target="#someotherdiv"`.
+An optional target UL parent to send the search results to. Example target="#someotherdiv".
 
 
 == Installation ==
