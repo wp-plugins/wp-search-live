@@ -13,7 +13,7 @@ A super light-weight live search plugin that utilizes the WP REST API.
 
 == Description ==
 
-WP Live Search is a search plugin for WordPress that returns results as the user types for what they are looking. It currently supports posts and pages with future plans to expand to custom post types.  
+WP Live Search is a search plugin for WordPress that returns results as the user types for what they are looking. It currently supports posts and pages with support for custom post types coming with the next update.
 
 This is very much a working prototype, so please log any issues you find on the Github repo below.  
 
