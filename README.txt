@@ -5,7 +5,7 @@ Plugin URI: http://nickhaskins.com/wp-live-search
 Tags: search, live search
 Requires at least: 3.5.1
 Tested up to: 4.2.1
-Stable tag: 0.6
+Stable tag: 0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,27 +13,34 @@ A super light-weight live search plugin that utilizes the WP REST API.
 
 == Description ==
 
-WP Live Search is a search plugin for WordPress that returns results as the user types for what they are looking. It supports posts, pages, and custom post types.
+WP Live Search is a search plugin for WordPress that returns results as the user types for what they are looking. It supports posts, pages and custom post types.    
 
 This is very much a working prototype, so please log any issues you find on the Github repo below.  
 
 [https://github.com/bearded-avenger/wp-live-search](https://github.com/bearded-avenger/wp-live-search)  
 
-WP REST API plugin required!
-
 Add the shortcode `[wp_live_search]` to a page or something. There's a few shortcode attributes that you can use, and are as follows:  
 
-type=“”   
-Your choices are `posts` or `pages`. Defaults to `posts`.
+type=""
+Your choices are `posts` or `pages`. Defaults to `posts`. You can also pass `type,type` to search multiple post types. For example type="recipes,books"
 
-placeholder=“”  
+multi=""
+By default this is turned off. Set this to true only if you're using multiple post types above.
+
+placeholder=""
 The text displayed in the input. Defaults to `Search...`.
 
-results=“”  
+results=""
 The text displayed for the results. Defaults to `entries found`.
 
-target=“”   
-An optional target UL parent to send the search results to. Example target="#someotherdiv".
+number=""  
+Total search result to return. Default is 20
+
+compact="true"  
+Makes a tiny WP Live Search for use in header widgets and such
+
+target=""  
+An optional target UL parent to send the search results to. Example `target="#someotherdiv"`.
 
 
 == Installation ==
@@ -66,7 +73,7 @@ Yes
 Not yet
 
 = Does it support custom post types? =
-Not yet
+Yes
 
 = Can I use multiple on one page? =
 No.
@@ -79,6 +86,12 @@ Yes just use `define('WPLS_DISABLE_STYLE', true)` and the CSS file will not load
 1. Default styling for the search
 
 == Changelog ==
+
+= 0.7 =
+* fixed results being returned in reverse order
+* added multiple post type support by using type="typeone,typetwo" multi="true"
+* added an option to set the number of results returned
+* added a "compact" mode option to that it can be used in places like a header widget
 
 = 0.6 =
 * added custom post type support
