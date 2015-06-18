@@ -21,25 +21,25 @@ This is very much a working prototype, so please log any issues you find on the 
 
 Add the shortcode `[wp_live_search]` to a page or something. There's a few shortcode attributes that you can use, and are as follows:  
 
-type=""
+type=“”   
 Your choices are `posts` or `pages`. Defaults to `posts`. You can also pass `type,type` to search multiple post types. For example type="recipes,books"
 
-multi=""
+multi=“”   
 By default this is turned off. Set this to true only if you're using multiple post types above.
 
-placeholder=""
+placeholder=“”  
 The text displayed in the input. Defaults to `Search...`.
 
-results=""
+results=“”  
 The text displayed for the results. Defaults to `entries found`.
 
-number=""  
+number=""    
 Total search result to return. Default is 20
 
-compact="true"  
+compact="true"    
 Makes a tiny WP Live Search for use in header widgets and such
 
-target=""  
+target=""   
 An optional target UL parent to send the search results to. Example `target="#someotherdiv"`.
 
 
