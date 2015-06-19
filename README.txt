@@ -5,7 +5,7 @@ Plugin URI: http://nickhaskins.com/wp-live-search
 Tags: search, live search
 Requires at least: 3.5.1
 Tested up to: 4.2.1
-Stable tag: 0.7
+Stable tag: 0.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,9 @@ Yes just use `define('WPLS_DISABLE_STYLE', true)` and the CSS file will not load
 1. Default styling for the search
 
 == Changelog ==
+
+= 0.7.1 = 
+* fixed bug with target=“” attribute only receiving one search result
 
 = 0.7 =
 * fixed results being returned in reverse order
