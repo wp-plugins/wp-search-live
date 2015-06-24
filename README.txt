@@ -5,7 +5,7 @@ Plugin URI: http://nickhaskins.com/wp-live-search
 Tags: search, live search
 Requires at least: 3.5.1
 Tested up to: 4.2.1
-Stable tag: 0.8
+Stable tag: 0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -112,6 +112,10 @@ Yep! Just copy over the function from underscore-template.php (without the funct
 1. Default styling for the search
 
 == Changelog ==
+
+= 0.9 =
+* added some CSS classes wpls--empty and wpls--full to the custom target div to aid in custom theming
+* added logic to prevent searching on escape or arrow keys
 
 = 0.8 =
 * added "dropdown" option mode for use in small spaces
